@@ -14,9 +14,9 @@
     <style>
     body {  
         margin: 15;
-        background-image: url("images/YumeBG3.png");
+        background-image: url("images/FSUBG.png");
         background-position: center;
-        height: 130vh;
+        height: 170vh;
         color: white;
         text-align: center;
         font-family: 'Lexend', sans-serif;
@@ -30,11 +30,6 @@
 
         background: rgba(0,0,0,0.3);
         z-index: -1;
-    }
-
-    @font-face {
-        font-family: Yume2kki;
-        src: url('yummy nickels.ttf');
     }
 
     /* Top title */
@@ -53,40 +48,40 @@
         margin: 0 auto;
 
         border: 20px solid transparent;
-        border-image: url("images/2kkiborder2.png") 35 stretch;
+        border-image: url("images/FSUFrame.png") 35 stretch;
         background-color: black;
 
         overflow: hidden; /* important */
     }
 
     #title {
-        font-family: Yume2kki;
+        font-family: Lexend;
         margin-top: 0px;
         font-size: 2em;   
     }
 
     /* Main box */
     .container {
-        width: 60%;
-        height: 90vh;
+        width: 85%;
+        height: 120vh;
         margin: 20px auto;
         display: flex;
-        background: #302749;
+        background: #492424;
         overflow: hidden;
     }
 
     /* Left tabs */
     .tabs {
         width: 225px;
-        background-image: url("images/YumeBG3.png");
+        background-image: url("images/FSUBG.png");
         display: flex;
         flex-direction: column;
         border: 20px solid transparent;
-        border-image: url("images/2kkiBorder.png") 35 stretch;
+        border-image: url("images/FSUBorder.png") 35 stretch;
     }
 
     .tabs button {
-        font-family: Yume2kki;
+        font-family: lexend;
         font-size: 15pt;
         padding: 15px;
         margin-top: 10px;
@@ -125,18 +120,18 @@
     /* Right content */
     .content {
         flex: 1;
-        padding: 20px;
+        padding: 60px;
         overflow-y: auto; /* THIS makes it scroll */
         text-align: left;
         border: 20px solid transparent;
-        border-image: url("images/2kkiBorder.png") 35 stretch;
+        border-image: url("images/FSUBorder.png") 35 stretch;
     }
 
     h2 {
         background: black;
         color: white;
         box-shadow: 0 0 0 4px #888;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
 
         border: 6px solid #cfcfcf; /* outer border */
         padding: 30px;
@@ -161,7 +156,7 @@
     }
 
     a {
-        color: #8c00ff;
+        color: #00c3ff;
         text-decoration: none;
         font-size: 20px;
     }
@@ -178,6 +173,9 @@
         align-items: center;
     }
 
+    .img-row img {
+        width: 500px;
+    }
     .img-link {
         width: 120px;
         height: auto;
@@ -216,7 +214,7 @@
         }
         .tabs {
             width: 50px;
-            background-image: url("images/YumeBG3.png");
+            background-image: url("images/FSUBG.png");
             display: flex;
             flex-direction: column;
             border: 15px solid transparent;
@@ -285,7 +283,7 @@
 </head>
 
 <div class="img-frame">
-    <img id="header-img" src="">
+    <img id="header-img" src="images/fsu.png">
 </div>
 
 <div class="img-decoration"></div>
@@ -299,17 +297,19 @@
 <div class="container">
 
     <div class="tabs">
-        <button onclick="showTab('about me', 'Welcome!', 'images/Yumehop.png')">About me</button>
-        <button onclick="showTab('revision', 'Revision', 'images/Yumetired.png')">Revision</button>
-        <button onclick="showTab('artifacts', 'Artifacts', 'images/UroCat.png')">Artifacts</button>
-        <button onclick="showTab('reflection', 'reflection', 'images/UroCat.png')">Reflection</button>
-        <button onclick="showTab('contact me', 'Contact me', 'images/UroCat.png')">Contact me</button>
+        <button onclick="showTab('about me', 'Welcome!', 'images/fsu.png')">About me</button>
+        <button onclick="showTab('revision', 'Revision', 'images/fsu.png')">Revision</button>
+        <button onclick="showTab('artifacts', 'Artifacts', 'images/fsu.png')">Artifacts</button>
+        <button onclick="showTab('reflection', 'Reflection', 'images/fsu.png')">Reflection</button>
     </div>
 
     <div class="content">
         <div id="about me" class="tab-content">
             <h2>My name is Isaiah Lindsey, I am a double major in Computer Science and Sports Management at FSU.</h2>
-            <img src="images/UroBoat.gif" class="img-decoration">
+            <div class="img-row">
+                <img src="images/football.png">
+                <img src="images/computer.png">
+            </div>
         </div>
 
         <div id="revision" class="tab-content" style="display:none;">
@@ -317,27 +317,22 @@
         </div>        
 
         <div id="artifacts" class="tab-content" style="display:none;">
-            <h2>Stuff I am currently working on, or plan to work on</h2>
+            <h2>Artifact 1: Letter to NFL Organization</h2>
+            <p>My letter was targeted toward a specific NFL organization presenting research done using Machine Learning models to better analytics in sports. 
+                I utilized this strategy as a professional way to show how I would directly contact a sports organization.
+            </p>
+            <embed src="Letter to NFL organization-1.pdf" width="100%" height="900px" />
+            <h2>Artifact 2: Mock Website</h2>
+            <p>I created a mock website showing data compiled by a Machine Learning model aimed toward engaged NFL fans, showing how the models work and what 
+                info they bring to the table in terms of draft talks. This genre is efficient as it would demonstrate real data with no trust needed, and would bring many fans on-board 
+                with the models.
+            </p>
+            <img src="images/MockWebsite-1.png" width="100%">
         </div>     
-
         <div id="reflection" class="tab-content" style="display:none;">
-            <h2>Stuff I am currently working on, or plan to work on</h2>
+            <h2>My overall  reflection on the different skills I learned throughout this course.</h2>
+            <embed src="Reflection-1.pdf" width="100%" height="900px" />
         </div>     
-
-        <div id="contact me" class="tab-content" style="display:none;">
-            <h2>Some places you can find me</h2>
-            <div class="img-row">
-                <a href="https://www.instagram.com/itsstillisa/" target="_blank">
-                    <img src="images/Instagram.png" alt="My Instagram!" class="img-link">
-                </a>
-                <a href="https://github.com/isa2kki" target="_blank">
-                    <img src="images/github.png" alt="My github account" class="img-link">
-                </a>
-                <a href="mailto:2007iml@gmail.com" target="_blank">
-                    <img src="images/Gmail.png" alt="My email" class="img-link">
-                </a>
-            </div>
-        </div>
       
     </div>
 
